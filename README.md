@@ -1,5 +1,4 @@
-
-# People Counter
+# OpenVINO People Counter
 
 
   | Details            |              |
