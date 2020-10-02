@@ -1,0 +1,27 @@
+{
+  "name": "intel-facial-recognition-server",
+  "version": "1.0.0",
+  "description": "Node server to support api calls from the facial recognition UI.",
+  "main": "./server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EmpiricalHub/intel-facial-recognition-server.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EmpiricalHub/intel-facial-recognition-server/issues"
+  },
+  "homepage": "https://github.com/EmpiricalHub/intel-facial-recognition-server#readme",
+  "dependencies": {
+    "mosca": "^2.8.3",
+    "restify": "^8.5.1",
+    "restify-cors-middleware": "^1.0.1",
+    "sqlite3": "^5.0.0",
+    "swagger-routes": "^1.7.2",
+    "uuid4": "^1.0.0"
+  }
+}
