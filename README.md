@@ -4,9 +4,8 @@
 
   | Details            |              |
 |-----------------------|---------------|
-| Target OS:            |  Ubuntu\* 16.04 LTS   |
-| Programming Language: |  Python* 3.5 |
-| Time to Complete:    |  45 min     |
+| Target OS:            |  Ubuntu\* 18.04 LTS   |
+| Programming Language: |  Python* 3.6.9 |
 
 ![people-counter-python](./images/people-counter-image.png)
 
