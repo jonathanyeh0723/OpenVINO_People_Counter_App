@@ -5,6 +5,7 @@
   | Details            |              |
 |-----------------------|---------------|
 | Target OS:            |  Ubuntu\* 18.04 LTS   |
+| OpenVINO Version: |  2020.3 LTS |
 | Programming Language: |  Python* 3.6.9 |
 
 ![people-counter-python](./images/people-counter-image.png)
