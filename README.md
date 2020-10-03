@@ -80,7 +80,7 @@ sudo apt install ffmpeg
 ```
 
 ## Build
-- 1. First, clone this repository to desired location:
+**1.** First, clone this repository to desired location:
 ```
 git clone
 ```
