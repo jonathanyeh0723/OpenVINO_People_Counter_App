@@ -23,11 +23,11 @@ By leveraging inference engine with a DNN model (pre-trained), this solution can
 
 Concretely, the main functions of the counter are:
 
-- Counting number of people in a current frame
-- Calculating the duration that a person is in the frame
+- Counting number of people in a current frame.
+- Calculating the duration that a person is in the frame.
 - Summing the total count of people from the start point. 
 
-Then, then app will send the data to a local web server using the Paho MQTT Python package.
+Then, the app will send the data to a local web server using the Paho MQTT Python package.
 
 ![architectural diagram](./images/workflow_pipeline.jpg)
 
