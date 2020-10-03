@@ -92,9 +92,7 @@ source /opt/intel/openvino/bin/setupvars.sh
 ```
 [setupvars.sh] OpenVINO environment initialized
 ```
-
-### Install npm
-
+**3. Install npm**
 There are three components that need to be running in separate terminals for this application to work:
 
 -   MQTT Mosca server 
@@ -103,7 +101,7 @@ There are three components that need to be running in separate terminals for thi
      
 Go to people-counter-python directory
 ```
-cd people-counter-python/
+cd OpenVINO_People_Counter_App/people-counter-python/
 ```
 * For mosca server:
    ```
@@ -113,7 +111,7 @@ cd people-counter-python/
 
 * For Web server:
   ```
-  cd people-counter-python/webservice/ui
+  cd ../ui
   npm install
   ```
   **Note:** If any unexpected configuration errors occur while using **npm install**, use the below commands for debugging:
