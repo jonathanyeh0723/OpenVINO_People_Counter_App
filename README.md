@@ -43,11 +43,11 @@ The DNN model used in this application is an Intel® optimized model that is par
      ```
      uname -a
      ```
-
+*   Intel® Distribution of OpenVINO™ toolkit 2020.3 LTS release
+*   Python 3.5 or newer
 *   Node v6.17.1
 *   Npm v3.10.10
 *   MQTT Mosca\* server
-  
         
 ## Setup
 
