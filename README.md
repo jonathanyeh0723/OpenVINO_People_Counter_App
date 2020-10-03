@@ -82,9 +82,16 @@ sudo apt install ffmpeg
 ## Build
 1. First, clone this repository to desired location:
 ```
-git clone
+git clone https://github.com/jonathanyeh0723/OpenVINO_People_Counter_App
 ```
-2. 
+2. Source the OpenVINO environment
+```
+source /opt/intel/openvino/bin/setupvars.sh
+```
+We should be able to see the following returned, if it is successful:
+```
+[setupvars.sh] OpenVINO environment initialized
+```
 
 ### Install npm
 
