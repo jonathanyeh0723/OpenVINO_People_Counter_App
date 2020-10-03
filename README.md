@@ -53,7 +53,7 @@ The DNN model used in this application is an Intel® optimized model that is par
 
 ### Install OpenVINO™ 
 
-The detailed guide of installing Intel® Distribution of OpenVINO™ toolkit for Linux* can be referred to [here](https://docs.openvinotoolkit.org/latest/openvino_docs_install_guides_installing_openvino_linux.html)
+The detailed guide of installing Intel® Distribution of OpenVINO™ toolkit for Linux* can be referred to [here](https://docs.openvinotoolkit.org/latest/openvino_docs_install_guides_installing_openvino_linux.html).
 
 ### Install Nodejs and its depedencies
 
