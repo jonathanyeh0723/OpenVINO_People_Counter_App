@@ -32,12 +32,13 @@ The DNN model used in this application is an Intel® optimized model that is par
 ### Hardware
 
 *  6th to 8th generation Intel® Core™ processor with Iris® Pro graphics or Intel® HD Graphics.
+*  Intel® Integrated GPUs, or VPUs (NCS2).
 
 ### Software
 
 *   [Ubuntu 18.04 LTS](https://releases.ubuntu.com/18.04/?_ga=2.147695671.1840577867.1601734098-557861503.1601734098)
     
-    **Note:** A 4.14+ Linux kernel is recommended. Run the following command to check the kernel version:
+    **Note:** 4.14+ Linux kernel is recommended. Run the following command to check the kernel version:
     
      ```
      uname -a
