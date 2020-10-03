@@ -27,7 +27,7 @@ The DNN model used in this application is an Intel® optimized model that is par
 
 ![architectural diagram](./images/workflow_pipeline.jpg)
 
-## Requirements
+## Prerequisites
 
 ### Hardware
 
