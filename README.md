@@ -7,7 +7,7 @@
 | OpenVINO Version: |  2020.3 LTS |
 | Programming Language: |  Python* 3.6.9 |
 
-![people-counter-python](./images/people_counter_title.jpg)
+![people-counter-python](./images/read_me_title.jpg)
 
 ## What it Does
 
