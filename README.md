@@ -43,7 +43,7 @@ The DNN model used in this application is an Intel® optimized model that is par
      ```
      uname -a
      ```
-*   Intel® Distribution of OpenVINO™ toolkit 2020.3 LTS release
+*   [Intel® Distribution of OpenVINO™ toolkit 2020.3 LTS release](https://software.intel.com/content/www/us/en/develop/articles/openvino-2020-3-lts-relnotes.html)
 *   Python 3.5 or newer
 *   Node v6.17.1
 *   Npm v3.10.10
