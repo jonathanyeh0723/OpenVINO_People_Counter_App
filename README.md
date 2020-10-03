@@ -88,7 +88,7 @@ git clone https://github.com/jonathanyeh0723/OpenVINO_People_Counter_App
 ```
 source /opt/intel/openvino/bin/setupvars.sh
 ```
-     We should be able to see the following returned, if it is successful:
+ We should be able to see the following returned, if it is successful:
 ```
 [setupvars.sh] OpenVINO environment initialized
 ```
