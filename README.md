@@ -88,7 +88,7 @@ There are three components that need to be running in separate terminals for thi
      
 Go to people-counter-python directory
 ```
-cd <path_to_people-counter-python_directory>
+cd people-counter-python/
 ```
 * For mosca server:
    ```
@@ -98,17 +98,16 @@ cd <path_to_people-counter-python_directory>
 
 * For Web server:
   ```
-  cd ../ui
+  cd people-counter-python/webservice/ui
   npm install
   ```
-  **Note:** If any configuration errors occur in mosca server or Web server while using **npm install**, use the below commands:
+  **Note:** If any unexpected configuration errors occur while using **npm install**, use the below commands for debugging:
    ```
-   sudo npm install npm -g 
-   rm -rf node_modules
-   npm cache clean
-   npm config set registry "http://registry.npmjs.org"
+   npm cache clean --force 
+   rm -rf node_modules package-lock.json
    npm install
    ```
+   The related issue can be found [here](https://stackoverflow.com/questions/42308879/how-to-solve-npm-error-npm-err-code-elifecycle) on Stack Overflow.
 ## Configure the application
 
 ### What model to use
