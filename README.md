@@ -51,21 +51,12 @@ The DNN model used in this application is an Intel® optimized model that is par
         
 ## Setup
 
-### Install Intel® Distribution of OpenVINO™ toolkit
+### Install OpenVINO™ 
 
-Refer to https://software.intel.com/en-us/articles/OpenVINO-Install-Linux for more information about how to install and setup the Intel® Distribution of OpenVINO™ toolkit.
-
-You will need the OpenCL™ Runtime Package if you plan to run inference on the GPU. It is not mandatory for CPU inference. 
+The detailed guide of installing Intel® Distribution of OpenVINO™ toolkit for Linux* can be referred to [here](https://docs.openvinotoolkit.org/latest/openvino_docs_install_guides_installing_openvino_linux.html)
 
 ### Install Nodejs and its depedencies
 
-- This step is only required if the user previously used Chris Lea's Node.js PPA.
-
-	```
-	sudo add-apt-repository -y -r ppa:chris-lea/node.js
-	sudo rm -f /etc/apt/sources.list.d/chris-lea-node_js-*.list
-	sudo rm -f /etc/apt/sources.list.d/chris-lea-node_js-*.list.save
-	```
 - To install Nodejs and Npm, run the below commands:
 	```
 	curl -sSL https://deb.nodesource.com/gpgkey/nodesource.gpg.key | sudo apt-key add -
