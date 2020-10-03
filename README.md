@@ -93,6 +93,7 @@ source /opt/intel/openvino/bin/setupvars.sh
 [setupvars.sh] OpenVINO environment initialized
 ```
 **3. Install npm**
+
 There are three components that need to be running in separate terminals for this application to work:
 
 -   MQTT Mosca server 
