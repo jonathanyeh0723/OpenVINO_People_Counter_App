@@ -1,7 +1,7 @@
 # OpenVINO People Counter
 
 
-| Details of Software   |                    |
+| Details of Software---|                    |
 |-----------------------|--------------------|
 | OS:                   | Ubuntu\* 18.04 LTS |
 | OpenVINO Version:     | 2020.3 LTS         |
