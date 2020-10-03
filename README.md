@@ -80,7 +80,7 @@ sudo apt install ffmpeg
 ```
 
 ## Build
-**1. First, clone this repository to desired location:**
+**1. Clone this repository to desired location:**
 ```
 git clone https://github.com/jonathanyeh0723/OpenVINO_People_Counter_App
 ```
