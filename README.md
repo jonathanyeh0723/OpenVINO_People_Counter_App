@@ -9,9 +9,13 @@
 
 ![people-counter-python](./images/read_me_title.jpg)
 
-## What it Does
+## Summary
 
-The people counter application is one of a series of IoT reference implementations aimed at instructing users on how to develop a working solution for a particular problem. It demonstrates how to create a smart video IoT solution using Intel® hardware and software tools. This solution detects people in a designated area, providing the number of people in the frame, average duration of people in frame, and total count.
+The solution of people counter application demonstrates a smart video IoT using Intel® hardware and software tools. It detects people in a designated area, providing the number of people in the frame, average duration of people in frame, and total count.
+
+The use cases of a people counter app are extensive, such as shopping malls, metro station, retail chain, public venue, bank, and so on. For instance, once a person is detected, we can follow the individual’s behavior to further collaborate with union to take actions if required. 
+
+In this case, we customize an alert time to print ‘CAUTION’ if the assigned threshold is crossed. It can check if a person is staying longer than normal period of duration in a frame, then maybe we shall be aware of potential incident happened shortly.
 
 ## How it Works
 
