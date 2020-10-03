@@ -17,6 +17,8 @@ The use cases of a people counter app are extensive, such as shopping malls, met
 
 In this case, we customize an alert time to print ‘CAUTION’ if the assigned threshold is crossed. It can check if a person is staying longer than normal period of duration in a frame, then maybe we shall be aware of potential incident happened shortly.
 
+## Workflow
+
 ## How it Works
 
 The counter uses the Inference Engine included in the Intel® Distribution of OpenVINO™ toolkit and the Intel® Deep Learning Deployment Toolkit. A pre-trained, SSD neural network detects people within a designated area by displaying a bounding box over them. It counts the number of people in the current frame, the duration that a person is in the frame (time elapsed between entering and exiting a frame) and the total count of people. It then sends the data to a local web server using the Paho MQTT Python package.
