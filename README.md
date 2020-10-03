@@ -80,10 +80,12 @@ sudo apt install ffmpeg
 ```
 
 ## Build
-**1.** First, clone this repository to desired location:
+1. First, clone this repository to desired location:
 ```
 git clone
 ```
+2. 
+
 ### Install npm
 
 There are three components that need to be running in separate terminals for this application to work:
