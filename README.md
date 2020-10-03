@@ -35,15 +35,14 @@ The DNN model used in this application is an Intel® optimized model that is par
 
 ### Software
 
-*   [Ubuntu 16.04 LTS](http://releases.ubuntu.com/16.04/)
+*   [Ubuntu 18.04 LTS](https://releases.ubuntu.com/18.04/?_ga=2.147695671.1840577867.1601734098-557861503.1601734098)
     
-    **Note:** We recommend using a 4.14+ Linux kernel with this software. Run the following command to determine your kernel version:
+    **Note:** A 4.14+ Linux kernel is recommended. Run the following command to check the kernel version:
     
      ```
      uname -a
      ```
-*   Intel® Distribution of OpenVINO™ toolkit 2019 R1 release
-*   OpenCL™ Runtime Package
+
 *   Node v6.17.1
 *   Npm v3.10.10
 *   MQTT Mosca\* server
