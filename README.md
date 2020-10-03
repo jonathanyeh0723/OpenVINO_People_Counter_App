@@ -1,11 +1,11 @@
 # OpenVINO People Counter
 
 
-|-------------------Details of Software |
-|-----------------------|---------------|
-| OS:            |  Ubuntu\* 18.04 LTS   |
-| OpenVINO Version: |  2020.3 LTS |
-| Programming Language: |  Python* 3.6.9 |
+|Details of Software                         |
+|-----------------------|--------------------|
+| OS:                   | Ubuntu\* 18.04 LTS |
+| OpenVINO Version:     | 2020.3 LTS         |
+| Programming Language: | Python* 3.6.9      |
 
 ![people-counter-python](./images/read_me_title.jpg)
 
