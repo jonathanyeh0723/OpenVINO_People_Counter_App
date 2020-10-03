@@ -25,7 +25,7 @@ The DNN model used in this application is an Intel® optimized model that is par
 
 ```/opt/intel/openvino/deployment_tools/intel_models/person-detection-retail-0013```
 
-![architectural diagram](./images/arch_diagram.png)
+![architectural diagram](./images/workflow.jpg)
 
 ## Requirements
 
