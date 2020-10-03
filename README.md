@@ -123,31 +123,6 @@ cd OpenVINO_People_Counter_App/people-counter-python/
    ```
    The related issue can be found [here](https://stackoverflow.com/questions/42308879/how-to-solve-npm-error-npm-err-code-elifecycle) on Stack Overflow.
 
-### Decide which model to use
-
-By default, this application uses the **person-detection-retail-0013** Intel® model, that can be accessed using the **model downloader**. The **model downloader** downloads the __.xml__ and __.bin__ files that will be used by the application.
-
-#### Download the __.xml__ and __.bin__ files
-
-Go to the **model downloader** directory present inside Intel® Distribution of OpenVINO™ toolkit:
-
-  ```
-  cd /opt/intel/openvino/deployment_tools/tools/model_downloader
-  ```
-
-Specify which model to download with `--name`.
-- To download the person-detection-retail-0013 model, run the following command:
-
-
-  ```
-  sudo ./downloader.py --name person-detection-retail-0013
-  ```
-- To optimize the model for FP16, run the following command:
-   ```
-   sudo ./downloader.py --name person-detection-retail-0013-fp16
-   ```
-The files will be downloaded inside the /Retail/object_detection/pedestrian/rmnet_ssd/0013/dldt directory.
-
 ## Run the application
 
 Go to people-counter-python directory:
