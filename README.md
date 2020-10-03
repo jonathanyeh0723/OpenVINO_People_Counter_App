@@ -19,11 +19,15 @@ In this case, we customize an alert time to print out ‘CAUTION’ if the assig
 
 ## Workflow
 
-The counter uses the Inference Engine included in the Intel® Distribution of OpenVINO™ toolkit and the Intel® Deep Learning Deployment Toolkit. A pre-trained, SSD neural network detects people within a designated area by displaying a bounding box over them. It counts the number of people in the current frame, the duration that a person is in the frame (time elapsed between entering and exiting a frame) and the total count of people. It then sends the data to a local web server using the Paho MQTT Python package.
+By leveraging inference engine with a DNN model (pre-trained), this solution can detect people within a designated area by displaying a bounding box over them.
 
-The DNN model used in this application is an Intel® optimized model that is part of the Intel® Distribution of OpenVINO™ toolkit. You can find it here:
+Concretely, the main functions of the counter are:
 
-```/opt/intel/openvino/deployment_tools/intel_models/person-detection-retail-0013```
+- Counting number of people in a current frame
+- Calculating the duration that a person is in the frame
+- Summing the total count of people from the start point. 
+
+Then, then app will send the data to a local web server using the Paho MQTT Python package.
 
 ![architectural diagram](./images/workflow_pipeline.jpg)
 
