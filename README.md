@@ -15,7 +15,7 @@ The solution of people counter application demonstrates a smart video IoT using 
 
 The use cases of a people counter app are quite extensive, such as shopping malls, metro station, retail chain, public venue, bank, and so on. For instance, once a person is detected, we can follow the individual’s behavior to further collaborate with union to take actions if required. 
 
-In this case, we customize an alert time to print ‘CAUTION’ if the assigned threshold is crossed. It can check if a person is staying longer than normal period of duration in a frame, then maybe we shall be aware of potential incident happened shortly.
+In this case, we customize an alert time to print out ‘CAUTION’ if the assigned threshold is crossed. It can check if a person is staying longer than normal period of duration in a frame, then maybe we shall be aware of potential incident happened shortly.
 
 ## Workflow
 
