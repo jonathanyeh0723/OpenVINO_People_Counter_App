@@ -191,6 +191,7 @@ source /opt/intel/openvino/bin/setupvars.sh
 #### 4.1: Running for single image
 
 ```
+cd people-counter-python/
 python3 main.py -m model/person-detection-retail-0013/person-detection-retail-0013.xml \
         -i resources/family.jpg \
         -d CPU \
