@@ -139,11 +139,11 @@ cd OpenVINO_People_Counter_App/people-counter-python/
 
 ## Run the application
 
-Go to people-counter-python directory:
-```
-cd <path_to_people-counter-python_directory>
-```
-### Step 1 - Start the Mosca server
+Before running the main function, you will need to have the MQTT, FFmpeg and UI servers all up and running. 
+
+Concretely, we’ll have to configure the environment in 4 terminals separately to enable the people counter app.
+
+### Terminal 1: Start the Mosca server
 
 ```
 cd webservice/server/node-server
@@ -156,11 +156,10 @@ connected to ./db/data.db
 Mosca server started.
 ```
 
-### Step 2 - Start the GUI
+### Terminal 2: Start the GUI
 
-Open new terminal and run below commands.
 ```
-cd ../../ui
+cd webservice/server/ui
 npm run dev
 ```
 
@@ -169,29 +168,22 @@ You should see the following message in the terminal.
 webpack: Compiled successfully
 ```
 
-### Step 3 - FFmpeg Server
+### Terminal 3: FFmpeg Server
 
-Open new terminal and run the below commands.
 ```
-cd ../..
+cd people-counter-python/
 sudo ffserver -f ./ffmpeg/server.conf
 ```
 
-### Step 4 - Run the code
+### Terminal 4: Run the code
 
-Open a new terminal to run the code.
+**Note: Prior to execute the main thread, we must initialize the OpenVINO environment by running the following command:**
 
-#### Setup the environment
-
-You must configure the environment to use the Intel® Distribution of OpenVINO™ toolkit one time per session by running the following command:
 ```
-source /opt/intel/openvino/bin/setupvars.sh -pyver 3.5
+source /opt/intel/openvino/bin/setupvars.sh 
 ```
-#### Running on the CPU
 
-When running Intel® Distribution of OpenVINO™ toolkit Python applications on the CPU, the CPU extension library is required. This can be found at /opt/intel/openvino/deployment_tools/inference_engine/lib/intel64/
-
-Though by default application runs on CPU, this can also be explicitly specified by ```-d CPU``` command-line argument:
+#### 4.1: Running for single image
 
 ```
 python3.5 main.py -i resources/Pedestrain_Detect_2_1_1.mp4 -m /opt/intel/openvino/deployment_tools/tools/model_downloader/Retail/object_detection/pedestrian/rmnet_ssd/0013/dldt/person-detection-retail-0013.xml -l /opt/intel/openvino/deployment_tools/inference_engine/lib/intel64/libcpu_extension_sse4.so -d CPU -pt 0.6 | ffmpeg -v warning -f rawvideo -pixel_format bgr24 -video_size 768x432 -framerate 24 -i - http://localhost:8090/fac.ffm
