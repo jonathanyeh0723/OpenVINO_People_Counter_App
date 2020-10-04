@@ -212,6 +212,6 @@ Or, simply perform the shell script including the above commands:
 
 To actually see the output on a web based interface, open the browser and type in http://localhost:8080/.
 
-![single_image_test](./images/test_image.jpg)
+![single_image_test](./test/test_image.jpg)
 
 #### 4.1: Running for video
