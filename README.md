@@ -219,4 +219,28 @@ To actually see the output on a web based interface, open the browser and type i
 
 #### 4.1: Running for video
 
+```
+cd people-counter-python/
+python3 main.py -m model/person-detection-retail-0013/person-detection-retail-0013.xml \
+        -i resources/Pedestrain_Detect_2_1_1.mp4 \
+        -d CPU \
+        -c BLUE \
+        -at 20.0 \
+        | ffmpeg \
+        -v warning \
+        -f rawvideo \
+        -pixel_format bgr24 \
+        -video_size 768x432 \
+        -framerate 24 \
+        -i - http://0.0.0.0:8090/fac.ffm
+```
+
+Or, simply perform the shell script including the above commands:
+
+```
+./exec_video.sh
+```
+
+!![video_test](./test/test_video.jpg)
+
 ![people_counter](./test/people_counter.gif)
