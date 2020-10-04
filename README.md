@@ -177,7 +177,7 @@ sudo ffserver -f ./ffmpeg/server.conf
 
 ### Terminal 4: Run the code
 
-**Note: Prior to execute the main thread, we must initialize the OpenVINO environment by running the following command:**
+Note: Prior to execute the main thread, we must initialize the OpenVINO environment by running the following command:
 
 ```
 source /opt/intel/openvino/bin/setupvars.sh 
@@ -188,6 +188,6 @@ source /opt/intel/openvino/bin/setupvars.sh
 ```
 python3.5 main.py -i resources/Pedestrain_Detect_2_1_1.mp4 -m /opt/intel/openvino/deployment_tools/tools/model_downloader/Retail/object_detection/pedestrian/rmnet_ssd/0013/dldt/person-detection-retail-0013.xml -l /opt/intel/openvino/deployment_tools/inference_engine/lib/intel64/libcpu_extension_sse4.so -d CPU -pt 0.6 | ffmpeg -v warning -f rawvideo -pixel_format bgr24 -video_size 768x432 -framerate 24 -i - http://localhost:8090/fac.ffm
 ```
-To see the output on a web based interface, open the link [http://localhost:8080](http://localhost:8080/) in a browser.
+To actually see the output on a web based interface, open the browser and type in 'http://localhost:8080/'.
 
 
