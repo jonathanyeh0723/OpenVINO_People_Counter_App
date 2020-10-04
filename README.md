@@ -21,7 +21,7 @@ In this case, we customize an alert time to print out ‘CAUTION’ if the assig
 
 By leveraging inference engine with a DNN model (pre-trained), this solution can detect people within a designated area by displaying a bounding box over them.
 
-Concretely, the main functions of the counter are:
+Specifically, the main functions of the counter are:
 
 - Counting number of people in a current frame.
 - Calculating the duration that a person is in the frame.
