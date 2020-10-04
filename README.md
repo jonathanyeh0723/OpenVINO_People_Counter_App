@@ -25,7 +25,7 @@ Specifically, the main functions of the counter are:
 
 - Counting number of people in a current frame.
 - Calculating the duration that a person is in the frame.
-- Summing the total count of people from the start point. 
+- Summing the total count of people from the starting point. 
 
 Then, the app will send the data to a local web server using the Paho MQTT Python package.
 
