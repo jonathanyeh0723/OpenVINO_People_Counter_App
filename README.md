@@ -249,8 +249,8 @@ To actually see the output on a web based interface, open the browser and type i
 
 ## Further Task
 
-- Test and compare the performance among different models
+- Test and compare the performance among different models.
 - Try various hardware plugin on Intel DevCloud. Find out the best fit and then deploy it to the edge.
-- Implement in other scenarios, i.e. metro system
+- Implement in other scenarios, i.e. metro system.
 
 
