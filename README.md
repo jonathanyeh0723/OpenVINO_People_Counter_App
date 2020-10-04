@@ -29,7 +29,7 @@ Specifically, the main functions of the counter are:
 
 Then, the app will send the data to a local web server using the Paho MQTT Python package.
 
-![architectural diagram](./images/workflow_pipeline.jpg)
+![workflow](./images/workflow_pipeline.jpg)
 
 ## Prerequisites
 
@@ -218,3 +218,5 @@ To actually see the output on a web based interface, open the browser and type i
 ![single_image_test](./test/test_image.jpg)
 
 #### 4.1: Running for video
+
+![people_counter](./test/people_counter.gif)
