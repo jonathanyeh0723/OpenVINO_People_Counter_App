@@ -42,13 +42,21 @@ Then, the app will send the data to a local web server using the Paho MQTT Pytho
 
 *   [Ubuntu 18.04 LTS](https://releases.ubuntu.com/18.04/?_ga=2.147695671.1840577867.1601734098-557861503.1601734098)
     
-    **Note:** 4.14+ Linux kernel is recommended. Run the following command to check the kernel version:
+    **Note:** 4.14+ Linux kernel is recommended. Run the following command to view the kernel version:
     
      ```
      uname -a
      ```
 *   [Intel® Distribution of OpenVINO™ toolkit 2020.3 LTS release](https://software.intel.com/content/www/us/en/develop/articles/openvino-2020-3-lts-relnotes.html)
+    To verify the OpenVINO version:
+    ```
+    ls -al /opt/intel/openvino
+    ```
 *   Python 3.5 or newer
+    To check the Python version:
+    ```
+    python3 --version
+    ```
 *   Node v6.17.1
 *   Npm v3.10.10
 *   MQTT Mosca\* server
