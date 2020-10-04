@@ -175,6 +175,11 @@ cd people-counter-python/
 sudo ffserver -f ./ffmpeg/server.conf
 ```
 
+You should see the following message in the terminal.
+```
+FFserver started.
+```
+
 ### Terminal 4: Run the code
 
 Note: Prior to execute the main thread, we must initialize the OpenVINO environment by running the following command:
@@ -198,6 +203,13 @@ python3 main.py -m model/person-detection-retail-0013/person-detection-retail-00
         -framerate 24 \
         -i - http://0.0.0.0:8090/fac.ffm
 ```
+
+Or, simply perform the shell script including the above commands:
+
+```
+./exec_image.sh
+```
+
 To actually see the output on a web based interface, open the browser and type in http://localhost:8080/.
 
 ![single_image_test](./images/)
