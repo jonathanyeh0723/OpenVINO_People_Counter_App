@@ -186,8 +186,20 @@ source /opt/intel/openvino/bin/setupvars.sh
 #### 4.1: Running for single image
 
 ```
-python3.5 main.py -i resources/Pedestrain_Detect_2_1_1.mp4 -m /opt/intel/openvino/deployment_tools/tools/model_downloader/Retail/object_detection/pedestrian/rmnet_ssd/0013/dldt/person-detection-retail-0013.xml -l /opt/intel/openvino/deployment_tools/inference_engine/lib/intel64/libcpu_extension_sse4.so -d CPU -pt 0.6 | ffmpeg -v warning -f rawvideo -pixel_format bgr24 -video_size 768x432 -framerate 24 -i - http://localhost:8090/fac.ffm
+python3 main.py -m model/person-detection-retail-0013/person-detection-retail-0013.xml \
+        -i resources/family.jpg \
+        -d CPU \
+        -pt 0.6 \
+        | ffmpeg \
+        -v warning \
+        -f rawvideo \
+        -pixel_format bgr24 \
+        -video_size 1269x710 \
+        -framerate 24 \
+        -i - http://0.0.0.0:8090/fac.ffm
 ```
-To actually see the output on a web based interface, open the browser and type in 'http://localhost:8080/'.
+To actually see the output on a web based interface, open the browser and type in http://localhost:8080/.
 
+![single_image_test](./images/)
 
+#### 4.1: Running for video
