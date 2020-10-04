@@ -69,6 +69,8 @@ Then, the app will send the data to a local web server using the Paho MQTT Pytho
 
 The detailed guide of installing Intel® Distribution of OpenVINO™ toolkit for Linux* can be referred to [here](https://docs.openvinotoolkit.org/latest/openvino_docs_install_guides_installing_openvino_linux.html).
 
+![openvino](./images/openvino.png)
+
 ### Install Nodejs and its depedencies
 
 - To install Nodejs and Npm, run the below commands:
