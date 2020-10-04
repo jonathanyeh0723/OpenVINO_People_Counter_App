@@ -217,7 +217,7 @@ To actually see the output on a web based interface, open the browser and type i
 
 ![single_image_test](./test/test_image.jpg)
 
-#### 4.1: Running for video
+#### 4.2: Running for video
 
 ```
 cd people-counter-python/
@@ -241,6 +241,16 @@ Or, simply perform the shell script including the above commands:
 ./exec_video.sh
 ```
 
-!![video_test](./test/test_video.jpg)
+To actually see the output on a web based interface, open the browser and type in http://localhost:8080/.
+
+![video_test](./test/test_video.jpg)
 
 ![people_counter](./test/people_counter.gif)
+
+## Further Task
+
+- Test and compare the performance among different models
+- Try various hardware plugin on Intel DevCloud
+- Implement in other scenarios, i.e. metro system
+
+
