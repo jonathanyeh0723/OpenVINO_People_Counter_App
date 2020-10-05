@@ -18,7 +18,7 @@ On the other hand, because Inference Engine use different data layouts of tensor
 
 My method(s) to compare model performance before and after conversion is to checking the memory size. It seems that they are almost the same so I bet this is not a proper approach. 
 
-As for differences between Edge and Cloud computing, Edge Computing is chosen for operations with privacy and low latency concerns. On the other hand, Cloud Computing is more suitable for dealing with big data.
+As for differences between edge and cloud computing, edge computing is chosen for operations with privacy and low latency concerns. On the other hand, cloud computing is more suitable for dealing with big data. The choice will differ from different scenario.
 
 ## Assess Model Use Cases the given scenario.
 
