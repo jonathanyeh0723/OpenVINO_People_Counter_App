@@ -33,7 +33,9 @@ For example, we can customize an alarm or notification once the counter detects 
 
 To deploy people counter app to the edge, we must consider end user requirement with great attention. These factors are lighting, model accuracy, camera focal length/image size, and so forth. Since it does exist some trade-off between performance and cost, the best fit is depended on given scenario.
 
-For instance, imagine a public venue host would like to control the total people in the active area to maintain the quality of this event. Since the budget is limited, it would be great to have a cost-effective and lightweight smart IoT device to count person automatically in the entrance, rather than hiring a guard to watch the surveillance system and do calculations manually. In this case we can suppose the hardware requirement is not that critical and some performance deviation is acceptable, so that we can choose a Raspberry Pi + NCS2 solution.
+For instance, imagine a public venue host would like to control the total people in the active area to maintain the quality of this event. Since the budget is limited, it would be great to have a cost-effective and lightweight smart IoT device to count person automatically in the entrance, rather than hiring a guard to watch the surveillance system and do calculations manually. 
+
+In this case, we can suppose the hardware requirement is not that critical and some performance deviation is acceptable, so that we can choose a Raspberry Pi + NCS2 as solution.
 
 ## Documenting Model Research
 
