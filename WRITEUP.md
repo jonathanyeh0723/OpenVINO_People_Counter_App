@@ -84,10 +84,29 @@ In this case, we can suppose the hardware requirement is not that critical and s
 
   ```
 
-- Checking the results: This model works better than the first one but lack accuracy as the bounding box sometimes will disappear so that the app can't count people correctly.  - Made some alterations to the threshold for increasing its accuracy but the results were not fruitful.
+- Checking the results: This model works better than the first one but lack accuracy as the bounding box sometimes will disappear so that the app can't count people correctly.  
 
-- Model 3: [Name]
-  - [Model Source]
-  - I converted the model to an Intermediate Representation with the following arguments...
-  - The model was insufficient for the app because...
-  - I tried to improve the model for the app by...
+- I tried to adjust the probability threshold but in vain. It seems the results do not get better.
+
+- **Model 3: SSD MobileNet V2 COCO**
+  - [Click to Download](http://download.tensorflow.org/models/object_detection/ssd_mobilenet_v2_coco_2018_03_29.tar.gz)
+  - Using the following commands to download public model, unpack the file, and utilize the Model Optimizer to convert it to the Intermediate Representation.
+  
+  ```
+  wget http://download.tensorflow.org/models/object_detection/ssd_mobilenet_v2_coco_2018_03_29.tar.gz
+  tar xvf ssd_mobilenet_v2_coco_2018_03_29.tar.gz
+  cd ssd_mobilenet_v2_coco_2018_03_29
+  python3 /opt/intel/openvino_2020.3.194/deployment_tools/model_optimizer/mo.py --input_model frozen_inference_graph.pb --tensorflow_use_custom_operations_config /opt/intel/openvino_2020.3.194/deployment_tools/model_optimizer/extensions/front/tf/ssd_v2_support.json --tensorflow_object_detection_api_pipeline_config pipeline.config --reverse_input_channels
+  ```
+
+  We should be able to see the following, if successful:
+  
+  ```
+  [ SUCCESS ] Generated IR version 10 model.
+  [ SUCCESS ] XML file: /home/intel/tmp/1001/people-counter-python/model/ssd_mobilenet_v2_coco_2018_03_29/./frozen_inference_graph.xml
+  [ SUCCESS ] BIN file: /home/intel/tmp/1001/people-counter-python/model/ssd_mobilenet_v2_coco_2018_03_29/./frozen_inference_graph.bin
+  [ SUCCESS ] Total execution time: 38.33 seconds. 
+  [ SUCCESS ] Memory consumed: 660 MB.
+  ```
+  
+  - Checking the results: This model works better than the first one but lack accuracy as the bounding box sometimes will disappear so that the app can't count people correctly.
