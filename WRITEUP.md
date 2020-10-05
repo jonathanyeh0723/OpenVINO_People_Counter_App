@@ -40,8 +40,8 @@ In this case, we can suppose the hardware requirement is not that critical and s
 ## Documenting Model Research
 
 - **Model 1: SSD MobileNet V1 COCO**
-  - [Model Source](http://download.tensorflow.org/models/object_detection/ssd_mobilenet_v1_coco_2018_01_28.tar.gz)
-  - I converted the model to an Intermediate Representation with the following arguments...
+  - [Click to Download](http://download.tensorflow.org/models/object_detection/ssd_mobilenet_v1_coco_2018_01_28.tar.gz)
+  - Using the following commands to download public model, unpack the file, and utilize the Model Optimizer to convert it to Intermediate Representation.
   - The model was insufficient for the app because...
   - I tried to improve the model for the app by...
   
