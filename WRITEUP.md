@@ -16,9 +16,15 @@ On the other hand, because Inference Engine use different data layouts of tensor
 
 ## Compare Model Performance
 
-To deploy people counter app to the edge, we must consider end user requirement with great attention. These factors are lighting, model accuracy, camera focal length/image size, and so forth.
+To deploy people counter app to the edge, we must consider end user requirement with great attention. These factors are lighting, model accuracy, camera focal length/image size, and so forth. Since it does exist some trade-off between performance and cost, the best fit is depended on given scenario.
 
-## Assess Model Use Cases
+- Lighting and Focal Length of the camera depends on the system installed. A bad lighting can seriosly reduces the accuracy of the model.
+
+- One thing to notice is that, the camera's angle plays an important role that has affects on both the lighting as well as model accuracy.
+
+- The camera image size should be compatible with the model for proper detection. The model accuracy is calculated using the confusion matrix which gives the details about the occurance of false postivites and negatives which degrades the accuracy of the model.
+
+## Assess Model Use Cases the given scenario.
 
 The use cases of a people counter app are quite extensive, such as:
 - metro station
