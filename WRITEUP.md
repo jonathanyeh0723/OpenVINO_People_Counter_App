@@ -81,7 +81,6 @@ In this case, we can suppose the hardware requirement is not that critical and s
   [ SUCCESS ] BIN file: /home/intel/tmp/1001/people-counter-python/model/ssd_inception_v2_coco_2018_01_28/./frozen_inference_graph.bin
   [ SUCCESS ] Total execution time: 33.72 seconds. 
   [ SUCCESS ] Memory consumed: 758 MB.
-
   ```
 
 - Checking the results: This model works better than the first one but lack accuracy as the bounding box sometimes will disappear so that the app can't count people correctly.  
@@ -109,4 +108,6 @@ In this case, we can suppose the hardware requirement is not that critical and s
   [ SUCCESS ] Memory consumed: 660 MB.
   ```
   
-  - Checking the results: This model works better than the first one but lack accuracy as the bounding box sometimes will disappear so that the app can't count people correctly.
+  - Checking the results: Similarly, this model can capture person from the frame. However, it still loses some accuacy.
+  
+  - The attempt to raising the confidence threshold does not seem improvement.
