@@ -111,3 +111,20 @@ In this case, we can suppose the hardware requirement is not that critical and s
   - Checking the results: Similarly, this model can capture person from the frame. However, it still loses some accuacy.
   
   - The attempt to raising the confidence threshold does not seem improvement.
+  
+  - **Model 4: Intel Pre-trained person-detection-retail-0013**
+  - [Check out this link](https://docs.openvinotoolkit.org/latest/omz_models_intel_person_detection_retail_0013_description_person_detection_retail_0013.html)
+  - Using the Model Downloader to get Intermediate Representation directly.
+  
+  ```
+  python3 /opt/intel/openvino/deployment_tools/tools/model_downloader/downloader.py --name person-detection-retail-0013 --precision FP32
+  ```
+
+  The IR files will be downloaded to intel/person-detection-retail-0013/FP2
+  
+  We shall be able to locate the binary file and model structure there.
+  ```
+  person-detection-retail-0013.bin  person-detection-retail-0013.xml
+  ```
+  
+  - Checking the results: Similarly, this model can capture person from the frame. However, it still loses some accuacy.
