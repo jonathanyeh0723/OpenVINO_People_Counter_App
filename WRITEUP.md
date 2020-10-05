@@ -16,6 +16,8 @@ On the other hand, because Inference Engine use different data layouts of tensor
 
 ## Compare Model Performance
 
+To deploy people counter app to the edge, we must consider end user requirement with great attention. These factors are lighting, model accuracy, camera focal length/image size, and so forth.
+
 ## Assess Model Use Cases
 
 The use cases of a people counter app are quite extensive, such as:
