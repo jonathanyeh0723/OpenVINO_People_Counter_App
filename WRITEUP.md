@@ -12,6 +12,8 @@ The Inference Engine loads the layers from the input model IR files into the spe
 
 On the other hand, because Inference Engine use different data layouts of tensors compared to TensorFlow, so we'll have to do data preprocessing in advance. Then, these tensors are flattened out to required data format for inference. The results Intermediate Representation including .xml and .bin files, which detailing our topology and weights.
 
+[custom_layer](images/custom_layer.jpg)
+
 ## Compare Model Performance
 
 ## Assess Model Use Cases
