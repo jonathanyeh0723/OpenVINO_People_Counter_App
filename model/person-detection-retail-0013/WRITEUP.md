@@ -1,6 +1,6 @@
 # Write-Up
 
-This documentation addresses an explanation of the process behind converting any custom layers, as well as explaining the potential reasons for handling custom layers in a trained model.
+The following address an explanation of the process behind converting any custom layers, as well as explaining the potential reasons for handling custom layers in a trained model.
 
 ## Explaining Custom Layers in OpenVINO™
 
