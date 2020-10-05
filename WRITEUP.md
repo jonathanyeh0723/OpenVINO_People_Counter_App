@@ -41,13 +41,23 @@ In this case, we can suppose the hardware requirement is not that critical and s
 
 - **Model 1: SSD MobileNet V1 COCO**
   - [Click to Download](http://download.tensorflow.org/models/object_detection/ssd_mobilenet_v1_coco_2018_01_28.tar.gz)
-  - Using the following commands to download public model, unpack the file, and utilize the Model Optimizer to convert it to Intermediate Representation.
+  - Using the following commands to download public model, unpack the file, and utilize the Model Optimizer to convert it to the Intermediate Representation.
   
   ```
   wget http://download.tensorflow.org/models/object_detection/ssd_mobilenet_v1_coco_2018_01_28.tar.gz
   tar ssd_mobilenet_v1_coco_2018_01_28.tar.gz
   cd cd ssd_mobilenet_v1_coco_2018_01_28/
   python3 /opt/intel/openvino/deployment_tools/model_optimizer/mo.py --input_model frozen_inference_graph.pb --tensorflow_object_detection_api_pipeline_config pipeline.config --reverse_input_channels --tensorflow_use_custom_operations_config /opt/intel/openvino/deployment_tools/model_optimizer/extensions/front/tf/ssd_support.json
+  ```
+  
+  We should be able to see the following, if successful:
+  
+  ```
+  [ SUCCESS ] Generated IR version 10 model.
+  [ SUCCESS ] XML file: /home/intel/tmp/1001/people-counter-python/model/ssd_mobilenet_v1_coco_2018_01_28/./frozen_inference_graph.xml
+  [ SUCCESS ] BIN file: /home/intel/tmp/1001/people-counter-python/model/ssd_mobilenet_v1_coco_2018_01_28/./frozen_inference_graph.bin
+  [ SUCCESS ] Total execution time: 27.04 seconds. 
+  [ SUCCESS ] Memory consumed: 455 MB.
   ```
   
   - The model was insufficient for the app because...
