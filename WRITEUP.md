@@ -60,7 +60,7 @@ In this case, we can suppose the hardware requirement is not that critical and s
   [ SUCCESS ] Memory consumed: 455 MB.
   ```
   
-  - Apparently this is not an appropriate model to this application. There are too many bounding boxes popped out when running the code, thus resulting in failed inference.
+  - Checking the results: Apparently this is not an appropriate model to this application. There are too many bounding boxes popped out when running the code, thus resulting in failed inference.
   
 - **Model 2: SSD Inception V2 COCO**
   - [Click to Download](http://download.tensorflow.org/models/object_detection/ssd_inception_v2_coco_2018_01_28.tar.gz)
@@ -83,6 +83,8 @@ In this case, we can suppose the hardware requirement is not that critical and s
   [ SUCCESS ] Memory consumed: 758 MB.
 
   ```
+
+- Checking the results: This model works better than the first one but lack accuracy as the bounding box sometimes will disappear so that the app can't count people correctly.  - Made some alterations to the threshold for increasing its accuracy but the results were not fruitful.
 
 - Model 3: [Name]
   - [Model Source]
