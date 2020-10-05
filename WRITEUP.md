@@ -83,9 +83,9 @@ In this case, we can suppose the hardware requirement is not that critical and s
   [ SUCCESS ] Memory consumed: 758 MB.
   ```
 
-- Checking the results: This model works better than the first one but lack accuracy as the bounding box sometimes will disappear so that the app can't count people correctly.  
-
-- I tried to adjust the probability threshold but in vain. It seems the results do not get better.
+  - Checking the results: This model works better than the first one but lack accuracy as the bounding box sometimes will disappear so that the app can't count people correctly. 
+  
+  - I tried to adjust the probability threshold but in vain. It seems the results do not get better.
 
 - **Model 3: SSD MobileNet V2 COCO**
   - [Click to Download](http://download.tensorflow.org/models/object_detection/ssd_mobilenet_v2_coco_2018_03_29.tar.gz)
