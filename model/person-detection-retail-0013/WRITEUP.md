@@ -23,4 +23,4 @@ The use cases of a people counter app are quite extensive, such as:
 - bank system
 - airline
 
-For example, we can customize an alarm or notification when the app detects above a certain number of people on video, or people are on camera longer than a certain length of time.
+For example, we can customize an alarm or notification once the counter detects above a certain number of people on video, or people are on camera longer than a certain length of time.
