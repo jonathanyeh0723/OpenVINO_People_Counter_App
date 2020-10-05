@@ -60,14 +60,29 @@ In this case, we can suppose the hardware requirement is not that critical and s
   [ SUCCESS ] Memory consumed: 455 MB.
   ```
   
-  - The model was insufficient for the app because...
-  - I tried to improve the model for the app by...
+  - Apparently this is not an appropriate model to this application. There are too many bounding boxes popped out when running the code, thus resulting in failed inference.
   
-- Model 2: [Name]
-  - [Model Source]
-  - I converted the model to an Intermediate Representation with the following arguments...
-  - The model was insufficient for the app because...
-  - I tried to improve the model for the app by...
+- **Model 2: SSD Inception V2 COCO**
+  - [Click to Download](http://download.tensorflow.org/models/object_detection/ssd_inception_v2_coco_2018_01_28.tar.gz)
+  - Using the following commands to download public model, unpack the file, and utilize the Model Optimizer to convert it to the Intermediate Representation.
+  
+  ```
+  wget http://download.tensorflow.org/models/object_detection/ssd_inception_v2_coco_2018_01_28.tar.gz
+  tar xvf ssd_inception_v2_coco_2018_01_28.tar.gz
+  cd ssd_inception_v2_coco_2018_01_28
+  python3 /opt/intel/openvino/deployment_tools/model_optimizer/mo.py --input_model frozen_inference_graph.pb --tensorflow_object_detection_api_pipeline_config pipeline.config --reverse_input_channels --tensorflow_use_custom_operations_config /opt/intel/openvino/deployment_tools/model_optimizer/extensions/front/tf/ssd_v2_support.json
+  ```
+
+  We should be able to see the following, if successful:
+  
+  ```
+  [ SUCCESS ] Generated IR version 10 model.
+  [ SUCCESS ] XML file: /home/intel/tmp/1001/people-counter-python/model/ssd_inception_v2_coco_2018_01_28/./frozen_inference_graph.xml
+  [ SUCCESS ] BIN file: /home/intel/tmp/1001/people-counter-python/model/ssd_inception_v2_coco_2018_01_28/./frozen_inference_graph.bin
+  [ SUCCESS ] Total execution time: 33.72 seconds. 
+  [ SUCCESS ] Memory consumed: 758 MB.
+
+  ```
 
 - Model 3: [Name]
   - [Model Source]
