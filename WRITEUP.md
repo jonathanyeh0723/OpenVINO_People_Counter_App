@@ -39,7 +39,7 @@ In this case, we can suppose the hardware requirement is not that critical and s
 
 ## Documenting Model Research
 
-- Model 1: [SSD MobileNet V1 COCO*]
+- **Model 1: SSD MobileNet V1 COCO**
   - [Model Source]
   - I converted the model to an Intermediate Representation with the following arguments...
   - The model was insufficient for the app because...
