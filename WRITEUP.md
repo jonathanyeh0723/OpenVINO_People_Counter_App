@@ -39,6 +39,9 @@ In this case, we can suppose the hardware requirement is not that critical and s
 
 ## Documenting Model Research
 
+Before using Intel existing IR to feed to the inference engine, I’ve tried three approaches. These steps are detailed as following:
+
+
 - **Model 1: SSD MobileNet V1 COCO**
   - [Click to Download](http://download.tensorflow.org/models/object_detection/ssd_mobilenet_v1_coco_2018_01_28.tar.gz)
   - Using the following commands to download public model, unpack the file, and utilize the Model Optimizer to convert it to the Intermediate Representation.
