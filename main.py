@@ -59,6 +59,7 @@ def get_args():
     
     # Optional 
     parser.add_argument("-d", "--device", default = "CPU", type =str, help = "To specify target device used for inference, CPU, GPU, VPU etc.")
+    parser.add_argument("-l", "--cpu_extension", required = False, type = str, default = None, help = "MKLDNN (CPU)-targeted custom layers. Absolute path to a shared library")
     parser.add_argument("-pt", "--prob_threshold", default = 0.5, type = float, help = "Probability threshold for detections filtering")
     parser.add_argument("-c", "--color", default = "GREEN", type = str, help = "The color of the bounding boxes to draw; RED, GREEN or BLUE")
     parser.add_argument("-at", "--alert_time", default = 20.0, type = float, help = "The duration people stay in the frame")
@@ -79,7 +80,7 @@ def infer_on_stream(args, client):
     plugin = Network()
 
     # Load model, and get the input shape
-    plugin.load_model(args.model, args.device, cur_request_id)
+    plugin.load_model(args.model, args.device, cur_request_id, args.cpu_extension)
     n, c, h, w = plugin.get_input_shape()
 
     ### Checking for the feed input file
