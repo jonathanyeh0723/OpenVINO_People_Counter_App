@@ -115,7 +115,7 @@ def infer_on_stream(args, client):
 
     # Set initial parameters
     temp = 0
-    tk = 0
+    fp = 0
     last_count = 0
     total_count = 0
     duration = 0
@@ -148,7 +148,7 @@ def infer_on_stream(args, client):
             det_time = time.time() - inf_start
 
             # Draw the bounding box
-            frame, current_count, d, tk= draw_boxes(frame, result, args, temp, tk)
+            frame, current_count, d, fp = draw_boxes(frame, result, args, temp, fp)
     
             # Print the inference time
             inf_time_message = "Inference time: {:.3f}ms".format(det_time * 1000)
@@ -165,6 +165,10 @@ def infer_on_stream(args, client):
                 duration = int(time.time() - start_time)
                 client.publish("person/duration", json.dumps({"duration": duration}))
 
+            # To check lost frames for false positive cases           
+            lost_info = "Lost frame: %d" %(fp - 1)
+            cv2.putText(frame, lost_info, (15, 30), cv2.FONT_HERSHEY_COMPLEX, 0.5, (200, 10, 10), 1)             
+               
             # Warning if people staying time > alert time 
             if duration >= args.alert_time:
                 cv2.putText(frame, 'CAUTION! Staying longer than ' + str(args.alert_time) + ' seconds', (15, 30), cv2.FONT_HERSHEY_COMPLEX, 0.5, (0, 0, 255), 1)
@@ -173,7 +177,6 @@ def infer_on_stream(args, client):
             last_count = current_count
             
             temp = d
-            in_time = 0
             ###----------------###
 
             # Break if escape key is pressed
@@ -235,7 +238,7 @@ def draw_boxes(frame, result, args, x, k):
     if current_count < 1:
         k += 1
             
-    if distance > 0 and k < 10:
+    if distance > 0 and k < 15:
         current_count = 1 
         k += 1 
         if k > 100:
