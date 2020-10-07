@@ -62,7 +62,7 @@ def get_args():
     parser.add_argument("-l", "--cpu_extension", required = False, type = str, default = None, help = "MKLDNN (CPU)-targeted custom layers. Absolute path to a shared library")
     parser.add_argument("-pt", "--prob_threshold", default = 0.5, type = float, help = "Probability threshold for detections filtering")
     parser.add_argument("-c", "--color", default = "GREEN", type = str, help = "The color of the bounding boxes to draw; RED, GREEN or BLUE")
-    parser.add_argument("-at", "--alert_time", default = 20.0, type = float, help = "The duration people stay in the frame")
+    parser.add_argument("-at", "--alert_time", default = 15.0, type = float, help = "The duration people stay in the frame")
 
     args = parser.parse_args()
 
