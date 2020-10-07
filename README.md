@@ -243,7 +243,7 @@ Or, simply perform the shell script including the above commands:
 
 To actually see the output on a web based interface, open the browser and type in http://localhost:8080/.
 
-![video_test](./test/test_video.jpg)
+![video_test](./test/test_for_video.jpg)
 
 ![people_counter](./test/people_counter.gif)
 
