@@ -245,7 +245,7 @@ To actually see the output on a web based interface, open the browser and type i
 
 ![video_test](./test/test_on_video.jpg)
 
-![people_counter](./test/people_counter.gif)
+![people_counter](./test/people_counter_demo.gif)
 
 ## Further Task
 
