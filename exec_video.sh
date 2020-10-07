@@ -3,7 +3,7 @@ python3 main.py -m model/person-detection-retail-0013/person-detection-retail-00
 	-i resources/Pedestrain_Detect_2_1_1.mp4 \
 	-d CPU \
 	-c BLUE \
-	-at 20.0 \
+	-at 15.0 \
 	| ffmpeg \
 	-v warning \
 	-f rawvideo \
