@@ -215,7 +215,7 @@ Or, simply perform the shell script including the above commands:
 
 To actually see the output on a web based interface, open the browser and type in http://localhost:8080/.
 
-![single_image_test](./test/test_image.jpg)
+![single_image_test](./test/test_on_image.jpg)
 
 #### 4.2: Running for video
 
@@ -243,7 +243,7 @@ Or, simply perform the shell script including the above commands:
 
 To actually see the output on a web based interface, open the browser and type in http://localhost:8080/.
 
-![video_test](./test/test_for_video.jpg)
+![video_test](./test/test_on_video.jpg)
 
 ![people_counter](./test/people_counter.gif)
 
