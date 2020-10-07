@@ -7,7 +7,7 @@
 | OpenVINO:           | 2020.3 LTS         |
 | Python:             |  3.6.9             |
 
-![people-counter-python](./images/read_me_title.jpg)
+![people-counter-python](./images/title.jpg)
 
 ## Summary
 
