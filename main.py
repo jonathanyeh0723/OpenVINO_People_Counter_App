@@ -171,7 +171,7 @@ def infer_on_stream(args, client):
                
             # Warning if people staying time > alert time 
             if duration >= args.alert_time:
-                cv2.putText(frame, 'CAUTION! Staying longer than ' + str(args.alert_time) + ' seconds', (15, 30), cv2.FONT_HERSHEY_COMPLEX, 0.5, (0, 0, 255), 1)
+                cv2.putText(frame, 'CAUTION! Staying longer than ' + str(args.alert_time) + ' seconds', (15, 45), cv2.FONT_HERSHEY_COMPLEX, 0.5, (0, 0, 255), 1)
 
             client.publish("person", json.dumps({"count": current_count}))
             last_count = current_count
