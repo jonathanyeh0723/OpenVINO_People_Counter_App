@@ -257,4 +257,4 @@ To actually see the output on a web based interface, open the browser and type i
 
 - This project originates from Udacity NANODEGREE PROGRAM - [Intel® Edge AI for IoT Developers](https://www.udacity.com/course/intel-edge-ai-for-iot-developers-nanodegree--nd131).
 
-- The [People Counter Solution](https://software.intel.com/content/www/us/en/develop/topics/iot/reference-implementations/people-counter-system.html) is provided by Intel.
+- The [People Counter Solution](https://software.intel.com/content/www/us/en/develop/topics/iot/reference-implementations/people-counter-system.html) is provided by Intel®.
