@@ -68,16 +68,16 @@ def get_args():
 
     return args
 
-def preprocessing(frame, n, c, h, w):
+def preprocessing(frame, batch, channel, height, width):
 
     # Resize to model's input w x h
-    p_frame = cv2.resize(frame, (w, h))
+    p_frame = cv2.resize(frame, (width, height))
 
     # Transpose the layout from hwc to chw
     p_frame = p_frame.transpose((2, 0, 1))
 
     # Reshape to model's shape n x c x h x w
-    p_frame = p_frame.reshape((n, c, h, w))
+    p_frame = p_frame.reshape((batch, channel, height, width))
     
     return p_frame
 
