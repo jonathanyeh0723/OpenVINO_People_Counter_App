@@ -68,6 +68,19 @@ def get_args():
 
     return args
 
+def preprocessing(frame, n, c, h, w):
+
+    # Resize to model's input w x h
+    p_frame = cv2.resize(frame, (w, h))
+
+    # Transpose the layout from hwc to chw
+    p_frame = p_frame.transpose((2, 0, 1))
+
+    # Reshape to model's shape n x c x h x w
+    p_frame = p_frame.reshape((n, c, h, w))
+    
+    return p_frame
+
 def infer_on_stream(args, client):
 
     # Set flag for the input 
@@ -127,16 +140,8 @@ def infer_on_stream(args, client):
             break
         key_pressed = cv2.waitKey(60)
 
-        ### Preprocessing
-        # Resize to model's input w x h
-        p_frame = cv2.resize(frame, (w, h))
-
-        # Transpose the layout from hwc to chw
-        p_frame = p_frame.transpose((2, 0, 1))
-
-        # Reshape to model's shape n x c x h x w
-        p_frame = p_frame.reshape((n, c, h, w))
-        ###
+        # Preprocessing
+        p_frame = preprocessing(frame, n, c, h, w)
 
         # Perform async_inference
         plugin.exec_net(cur_request_id, p_frame)
