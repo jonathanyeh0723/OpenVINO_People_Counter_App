@@ -5,7 +5,7 @@
 | Details of Software |                    |                   
 |---------------------|--------------------|
 | OS:                 | Ubuntu\* 18.04 LTS |
-| OpenVINO:           | 2020.3 LTS         |
+| OpenVINO:           | [2020.3 LTS](https://software.intel.com/content/www/us/en/develop/articles/openvino-2020-3-lts-relnotes.html)         |
 | Python:             |  3.6.9             |
 
 ![people-counter-python](./images/title.jpg)
