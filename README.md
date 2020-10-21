@@ -1,6 +1,6 @@
 # OpenVINO People Counter
 
-[![Stable release](https://img.shields.io/badge/version-2021.1-green.svg)](https://github.com/openvinotoolkit/openvino/releases/tag/2021.1)
+[![Stable release](https://img.shields.io/badge/version-2020.3 LTS-green.svg)](https://github.com/openvinotoolkit/openvino/releases/tag/2021.1)
 [![Apache License Version 2.0](https://img.shields.io/badge/license-Apache_2.0-green.svg)](LICENSE)
 
 | Details of Software |                    |                   
