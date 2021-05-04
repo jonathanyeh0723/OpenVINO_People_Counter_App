@@ -136,6 +136,8 @@ cd OpenVINO_People_Counter_App/people-counter-python/
    ```
    npm cache clean --force 
    rm -rf node_modules package-lock.json
+   sudo npm install -g n --force
+   sudo n stable
    npm install
    ```
    The related issue can be found [here](https://stackoverflow.com/questions/42308879/how-to-solve-npm-error-npm-err-code-elifecycle) on Stack Overflow.
