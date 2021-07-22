@@ -9,7 +9,6 @@
 | Python:             |  3.6.9             |
 
 ![people-counter-python](./images/title.jpg)
-![test](https://i.imgur.com/pAFVeng.jpg)
 
 ## Summary
 
